@@ -1,2 +1,6 @@
-@import 'src/styles';
+@use "src/assets/variables_baseline";
+@use  'src/assets/variables_baseline/mixed';
 
+body {
+  background-color: black;
+}

@@ -1,0 +1,34 @@
+<!--TODO: Add validation -->
+
+<form class="form" (submit)="onSubmit()" [formGroup]="prescriptionForm" >
+  <div class="form__input-regular">
+    <label>Dosage</label>
+    <div class="form__input-regular__input-dosage">
+      <input type="number" formControlName="dosage" name="dosage"  pInputText/>
+      <p-dropdown [options]="units" optionLabel="unit" ></p-dropdown>
+    </div>
+    <span class="error" *ngIf="dosage.invalid"> Wrong!</span>
+  </div>
+  <div class="form__input-regular">
+    <label>Issue Date</label>
+    <input required type="date" formControlName="issueDate" pInputText/>
+    <span class="error" *ngIf="medicalSpecialty.invalid"> Wrong!</span>
+  </div>
+ <div class="form__input-regular">
+   <label>Drug Name</label>
+   <input type="text" formControlName="drugName"  pInputText/>
+ </div>
+ <div class="form__input-regular">
+   <label>Time Limited</label>
+   <input type="number" formControlName="timeLimited" pInputText/>
+ </div>
+<div  class="form__input-regular">
+  <label>Medical  Specialty</label>
+  <p-dropdown [options]="medicals"  optionLabel="name"></p-dropdown>
+</div>
+
+
+  <p-button [disabled]="dosage.invalid ||  medicalSpecialty.invalid" type="submit" >Submit</p-button>
+</form>
+
+

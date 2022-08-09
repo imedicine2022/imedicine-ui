@@ -1,8 +1,16 @@
 <div class="login-container">
   <div class="login-container__box">
+
     <div class="login-container__box__title">iMedicine</div>
-    <input placeholder="Username"  type="text" pInputText />
-    <input placeholder="password"  type="password" pInputText />
-    <p-button>Login</p-button>
+    <div class="login-container__box__inputs">
+      <input  name="username" placeholder="Username"  type="text" pInputText />
+      <input   name="password" placeholder="password"  type="password" pInputText />
+    </div>
+    <p-button   [routerLink]="'/home-page'"  class="login-container__box__button">Login</p-button>
+    <div class="login-container__box__text-signup">If you don't have an account</div>
+    <div class="login-container__box__link-signup login-container__box__text-signup">Sign Up</div>
   </div>
+</div>
+<div class="box">
+  <div class="sub-box"></div>
 </div>

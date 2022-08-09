@@ -1,0 +1,13 @@
+.add-medicine-container {
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+::ng-deep {
+  .p-dropdown {
+    .p-hidden-accessible {
+      display: none;
+    }
+  }
+}

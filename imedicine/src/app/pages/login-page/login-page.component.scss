@@ -7,11 +7,13 @@
 
   .login-container {
     &__box {
+      border-radius: 6px;
       width: 856px;
       background-color: $background-color;
       display:flex;
-      flex-direction: column;
+      flex-direction: column !important;
       align-items: center;
+
 
       &__title {
         color: $primary;
@@ -23,16 +25,55 @@
         padding-bottom: 135px;
       }
 
-      input {
-        width: 441px;
-        padding: 20px;
-        font-size: 32px;
-        margin-bottom: 45px;
+      &__inputs {
+        display: flex;
+        flex-direction: column;
+        input {
+          width: 313px;
+          margin-bottom: 40px;
+        }
+
       }
+
+      &__button {
+        font-weight: 400;
+        margin-top: 173px;
+        margin-bottom: 120px;
+
+
+        ::ng-deep {
+          .p-button {
+            font-size: 30px;
+            background-color: $primary;
+            text-align: center;
+          }
+        }
+      }
+      &__text-signup{
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 10px;
+
+      }
+
+      &__link-signup {
+        font-weight: 700;
+        padding: 10px;
+
+
+        &:hover {
+          color: #ACE6FF;
+          background-color: #080EA0;
+          cursor: pointer;
+          border-radius: 6px;
+        }
+      }
+
     }
 
 
   }
 
 }
+
 

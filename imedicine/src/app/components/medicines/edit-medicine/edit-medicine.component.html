@@ -1,0 +1,6 @@
+<div class="add-medicine-container">
+  <p-dropdown optionLabel="medicineName" [placeholder]="'Choose a medicine'"
+              [showClear]="true" [options]="medicines" [(ngModel)]="selectedMedicine" ></p-dropdown>
+  <p-button label="Edit Medicine" (onClick)="handleClick($event)"></p-button>
+
+</div>

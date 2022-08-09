@@ -1,6 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
-@import '~primeng/resources/primeng.min.css';
+@import '../node_modules/primeicons/primeicons.css';
+@import '../node_modules/primeng/resources/themes/bootstrap4-light-blue/theme.css';
+@import 'assets/variables_baseline/mixed';
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: lightblue;;
+}
+
+input {
+  white-space: nowrap;
 }

@@ -1,0 +1,44 @@
+
+
+.form  {
+  display: flex;
+  flex-direction: column;
+
+
+  &__input-dosage {
+
+    //display :flex;
+    justify-content: center;
+    input {
+      width:  100px;
+    }
+
+  }
+
+  &__input-regular  {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    input, p-dropdown {
+      margin: 20px;
+    }
+
+    label {
+      padding-bottom: 15px;
+    }
+
+    &__input-dosage {
+
+    }
+    //display :  flex;
+  }
+
+  p-button {
+    margin:  20px;
+  }
+}
+
+.error::before {
+  transition: opacity 5s ease-in;
+}
+

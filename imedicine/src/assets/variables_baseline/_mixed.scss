@@ -1,0 +1,6 @@
+@use "colors";
+@use "fonts";
+
+.error {
+  color: colors.$error-color;
+}

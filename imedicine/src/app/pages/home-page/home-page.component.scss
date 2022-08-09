@@ -1,0 +1,25 @@
+@use 'src/assets/variables_baseline';
+@import 'src/assets/variables_baseline/mixed';
+
+.box-container {
+  display:flex;
+  flex-direction: column;
+  &__title {
+    width:100%;
+    text-align: center;
+    color: variables_baseline.$primary;
+  }
+
+  &__cards-container {
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    row-gap: 30px;
+
+    &__card {
+      width:  50%;
+      padding: 20px;
+    }
+  }
+}
